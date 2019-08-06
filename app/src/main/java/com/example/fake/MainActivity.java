@@ -14,7 +14,8 @@ public class MainActivity extends AppCompatActivity implements ExampleDialog.Exa
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        
+        //Create distinct TextView objects using the id of the corresponding Views in the XML layout
         textViewUsername = (TextView) findViewById(R.id.textview_username);
         textViewPassword = (TextView) findViewById(R.id.textview_password);
         button = (Button) findViewById(R.id.button);
