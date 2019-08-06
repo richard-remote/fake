@@ -23,14 +23,10 @@ public class MainActivity extends AppCompatActivity implements ExampleDialog.Exa
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openDialog();
+                ExampleDialog exampleDialog = new ExampleDialog();
+                exampleDialog.show(getSupportFragmentManager(), "example dialog");
             }
         });
-    }
-
-    public void openDialog() {
-        ExampleDialog exampleDialog = new ExampleDialog();
-        exampleDialog.show(getSupportFragmentManager(), "example dialog");
     }
 
     @Override
