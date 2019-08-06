@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity implements ExampleDialog.Exa
         textViewPassword = (TextView) findViewById(R.id.textview_password);
         button = (Button) findViewById(R.id.button);
         
+        //Use the setOnClickListner to configure what code runs when the user presses the button object
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
